@@ -1,0 +1,5 @@
+/* Estilo para animar elementos con clase animate__animated y animate__fadeIn */
+.animate__animated .animate__fadeIn {
+    /* Duración de la animación */
+    --animate-duration: 3s;
+}

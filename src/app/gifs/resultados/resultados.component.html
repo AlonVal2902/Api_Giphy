@@ -1,0 +1,12 @@
+<div class="row">
+    <!-- Definición de columnas adaptativas para pantallas medianas y grandes -->
+    <div class="col-md-3 col-sm-6" *ngFor="let gif of resultados">
+        <!-- Inicio de una tarjeta animada -->
+        <div class="card mt-3 animate__animated animate__fadeIn">
+            <!-- Encabezado personalizado de la tarjeta -->
+            <div class="card-header bg-dark text-light">{{ gif.title }}</div>
+            <!-- Contenido principal de la tarjeta: imagen del gif -->
+            <img [src]="gif.images.downsized_medium.url" class="card-img-top" [alt]="gif.title">
+        </div>
+    </div>
+</div>

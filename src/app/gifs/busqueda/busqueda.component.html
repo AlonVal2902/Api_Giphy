@@ -1,0 +1,16 @@
+<h5>Buscar: </h5>
+
+<!-- box para ingresar el termino de busqueda -->
+<input #txtBuscar type="text" class="form-control" (keyup.enter)="buscar(txtBuscar.value)" placeholder="Buscar gifs...">
+
+<!-- Boton para activar la busqueda al click-->
+<button class="btn btn-primary btn-sm mt-2" (click)="buscar(txtBuscar.value)">Buscar</button>
+
+<!-- Contenedor de botones adicionales -->
+<div class="mt-3">
+    <!-- Boton para mostrar resultados guardados -->
+    <button class="btn btn-success btn-sm" style="margin-right:4px; background-color: #00cc00; border-color: #00cc00;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Resultados Guardados</button>
+
+    <!-- Boton para limpiar los resultados de busqueda-->
+    <button class="btn btn-secondary btn-sm" (click)="limpiar()" type="button">Limpiar resultados</button>
+</div>
